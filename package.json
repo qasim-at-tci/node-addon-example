@@ -1,29 +1,29 @@
 {
-    "name" : "node-addon-example",
-    "version" : "0.1.5",
-    "description" :"Hello world app packaged with node-pre-gyp",
-    "main" : "./index.js",
-    "author" : "Dane Springmeyer <springmeyer>",
-    "repository"   :  {
-       "type" : "git",
-       "url"  : "git://github.com/springmeyer/node-addon-example.git"
+    "name": "node-addon-example",
+    "version": "0.1.5",
+    "description": "Hello world app packaged with node-pre-gyp",
+    "main": "./index.js",
+    "author": "Dane Springmeyer <springmeyer>",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/springmeyer/node-addon-example.git"
     },
     "binary": {
-        "module_name" : "node_addon_example",
-        "module_path" : "./lib/binding/{configuration}/{node_abi}-{platform}-{arch}/",
-        "remote_path" : "./{module_name}/v{version}/{configuration}/",
+        "module_name": "node_addon_example",
+        "module_path": "./lib/binding/{configuration}/{node_abi}-{platform}-{arch}/",
+        "remote_path": "./{module_name}/v{version}/{configuration}/",
         "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz",
-        "host"        : "https://node-pre-gyp-tests.s3-us-west-1.amazonaws.com"
+        "host": "https://node-pre-gyp-tests.s3-us-west-1.amazonaws.com"
     },
-    "dependencies"  : {
-      "nan": "2.x",
-      "node-pre-gyp": "0.6.x"
+    "dependencies": {
+        "@mapbox/node-pre-gyp": "^1.0.0",
+        "nan": "2.x"
     },
     "devDependencies": {
         "aws-sdk": "2.x"
     },
     "scripts": {
-        "install" : "node-pre-gyp install --fallback-to-build",
+        "install": "node-pre-gyp install --fallback-to-build",
         "test": "node index.js"
     }
 }
