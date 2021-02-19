@@ -1,7 +1,7 @@
 node-addon-example
 ==================
 
-[![Build Status](https://travis-ci.org/springmeyer/node-addon-example.svg?branch=master)](https://travis-ci.org/springmeyer/node-addon-example)
+[![Build Status](https://www.travis-ci.com/springmeyer/node-addon-example.svg?branch=master)](https://www.travis-ci.com/springmeyer/node-addon-example)
 
 Sample application of a Node C++ addon packaged with [node-pre-gyp](https://github.com/mapbox/node-pre-gyp).
 
